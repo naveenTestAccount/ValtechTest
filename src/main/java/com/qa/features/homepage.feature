@@ -9,7 +9,7 @@ Scenario: User is one homepage and verify whether Latest News section is display
  And close the browser
  
   Scenario: Find contact us page    	
-    	When I scroll to contact us
-    	Then I verify branches details 
+    	When user scroll to contact us
+    	Then user verify branches details 
  
  

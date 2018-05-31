@@ -33,6 +33,19 @@ public class HomePageSteps extends TestBase{
 		homepage.searchLatestNewsText();
 	}
 	
+	@Given("^user scroll to contact us$")
+	public void user_scroll_to_contact_us() throws Throwable {
+	    
+		homepage.searchContactUs();		
+	}
+	
+	@Given("^user verify branches details$")
+	public void user_verify_branches_details () throws Throwable {
+	   
+		
+
+	}
+	
 	
 	@Given("^close the browser$")
 	public void close_the_browser() throws Throwable {
