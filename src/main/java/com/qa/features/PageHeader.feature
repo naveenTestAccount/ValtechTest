@@ -1,12 +1,15 @@
-Feature: Page Header Validation
+Feature: Page Header Validation 
 
-Scenario Outline: About page header validation
-    Given user go to <pagetype> pages
-    When user search for page header text
-    Then user veify page header <content> in the page
-    
-    Examples:
-    | pagetype 	| content 	|
-    | About 	| About 	|
-    | Work 		| Work 		|
-    | Services 	| Services 	|
+Background: 
+	Given user opens browser 
+	
+Scenario Outline: page validation 
+	Given user go to <pagetype> page 
+	When user search for page header text 
+	Then user verifies page header <content> in the page 
+	Then user close the browser 
+	Examples: 
+		| pagetype 	|page header| content 	|
+		| About 	| About 	| About 	|
+		| Work 		| Work 		| Work 		|
+		| Services 	| Services 	| Services	|
