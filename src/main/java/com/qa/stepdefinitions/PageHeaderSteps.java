@@ -17,7 +17,7 @@ import cucumber.api.java.en.When;
 
  public class PageHeaderSteps extends TestBase {
 	
-
+	 
 	WorkPage workPage = new WorkPage();
 	AboutPage aboutPage = new AboutPage();
 	ServicesPage servicesPage = new ServicesPage();
@@ -38,20 +38,7 @@ import cucumber.api.java.en.When;
 				else System.out.println("No Page matched");
 	}
 
-//	@When("^user search for page header text$")
-//	public void user_search_for_page_header_text(String content) throws Throwable {
-////		if (content.equals("About")) {
-////			workPage.checkWorkPageHeaderText();
-////		}
-////		else if (content.equals("Work")) {
-////			servicesPage.checkServicesPageHeader();
-////		}
-////			else if (content.equals("Services")) {
-////				aboutPage.checkAboutPageHeaderText();
-////			}
-////				else System.out.println("No Page Header matched");
-//		getPageHeader();
-//	}
+
 	@When("^user search for page header text$")
 	public void user_search_for_page_header_text() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
@@ -60,17 +47,8 @@ import cucumber.api.java.en.When;
 
 	@Then("^user verifies page header (.*) in the page$")
 	public void user_verifies_page_header_About_in_the_page(String headercontent) throws Throwable {
-		if (headercontent.equals("About")) {
-			workPage.checkWorkPageHeader();
-		}
-		else if (headercontent.equals("Work")) {
-			servicesPage.checkServicesPageHeader();
-		}
-			else if (headercontent.equals("Services")) {
-				aboutPage.checkAboutPageHeader();
-			}
-				else System.out.println("No Page Header Content");
-		//pageHeaderVerify(headercontent);
+
+		pageHeaderVerify(headercontent);
 	}
 
 	}
