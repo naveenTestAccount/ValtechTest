@@ -37,7 +37,7 @@ Summary:
 	
 	c) Go to > TestRunner.java
 	
-	d) Right click and run as Jnuit Test
+	d) Right click and run as JUnit Test
 	
 	
 						
